@@ -1,0 +1,13 @@
+mes,incentivo,categoria,descripcion,regla_clave,valor_usuario,costo_fintech
+1,Racha Activa,emocional,"El personaje despierta y aparece la llama: la racha comienza",—,Onboarding emocional: sensación de inicio,$0
+2,Mover Vencimiento 72hs,funcional,"Botón para mover el vencimiento de la cuota 72 horas","1 uso por crédito; activar antes del vencimiento; no condona la cuota",Evita el primer default,"Mínimo (float de 72hs)"
+3,Barra de Progreso,progreso,"Aparece la barra visual de avance en la pantalla principal (25%)",—,Visualiza que está construyendo algo,$0
+4,Barra al 33%,progreso,"La barra avanza a 33% con notificación de progreso",—,Primera vez que ve el avance,$0
+5,Cashback 10%,financiero,"Recibe 10% del monto de la cuota como cashback en billetera","Tope $5.000 por evento; acreditación automática al pagar la cuota 6","~$4.500 sobre cuota promedio de $45.000, sin trámite","~$4.500 por usuario activo (vs CAC $3.000–$8.000)"
+6,Reintegro por Pago Anticipado,financiero,"Reintegro sobre la cuota si paga entre el día 1 y 3 del ciclo","Requiere flag_anticipado; tope $1.500 por cuota; acredita el mes siguiente; recurrente desde mes 6; % a definir",Plata real todos los meses que anticipe,"Acotado al tope, predecible"
+7,Barra al 58%,progreso,"La barra supera la mitad con notificación de cercanía al nivel Plata",—,Refuerzo de avance: nivel Plata a la vista,$0
+8,Nivel Plata,estatus,"El personaje evoluciona a estado Plata y se otorga badge en el perfil","Mantiene el reintegro anticipado del mes 6",Jerarquía y lealtad: no quiere perder el nivel,$0
+9,Barra al 75%,progreso,"Barra al 75% con notificación de urgencia positiva y anticipación visual del personaje",—,Último tramo hacia la recompensa mayor,$0
+10,Escudo de Racha,proteccion,"Canje de 500 monedas para cubrir el interés punitorio de una cuota atrasada sin romper la racha","1 uso en todo el crédito; cubre solo el interés punitorio, no la cuota",Protege la racha construida ante un atraso,$0 (monedas internas)
+11,Barra al 91%,progreso,"Barra casi completa con animación de anticipación y llama en máxima expresión",—,Anticipación de la recompensa final,$0
+12,Tasa -3% + Score Exportable + Personaje Final,financiero / estatus,"Tasa del próximo crédito -3 puntos porcentuales, score Racha exportable y personaje final con animación única","Aplica al próximo crédito dentro de 6 meses; sobre el nuevo límite; nunca debajo de la tasa base mínima","Crédito más barato, historial portable y cierre simbólico","Margen positivo (pricing correcto a riesgo mínimo)"
