@@ -12,11 +12,11 @@ import {
 import { Progress } from '@/components/ui/progress';
 
 import { useDemo } from './demo-context';
-import { MONTH_LABELS, PAID_MONTHS, STREAK_MONTHS } from './demo-content';
+import { MONTH_LABELS } from './demo-content';
 
 // La tarjeta embebible de Racha: el producto que se está demostrando.
 export function RachaIntegrationCard() {
-  const { open } = useDemo();
+  const { open, paidMonths } = useDemo();
 
   return (
     <button
@@ -39,13 +39,13 @@ export function RachaIntegrationCard() {
             />
           </CardTitle>
           <CardDescription>
-            {STREAK_MONTHS} meses seguidos · seguí así
+            {paidMonths} meses seguidos · seguí así
           </CardDescription>
         </CardHeader>
         <CardContent className="px-4">
           <Progress
-            value={(PAID_MONTHS / MONTH_LABELS.length) * 100}
-            aria-label={`Progreso de tu racha: ${PAID_MONTHS} de ${MONTH_LABELS.length} meses`}
+            value={(paidMonths / MONTH_LABELS.length) * 100}
+            aria-label={`Progreso de tu racha: ${paidMonths} de ${MONTH_LABELS.length} meses`}
           />
         </CardContent>
       </Card>

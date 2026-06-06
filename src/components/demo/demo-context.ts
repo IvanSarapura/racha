@@ -8,6 +8,9 @@ export type DemoContextValue = {
   screen: DemoScreen;
   open: () => void;
   back: () => void;
+  // Cuotas pagadas (0–12); clic en un círculo de mes simula pagar hasta ahí
+  paidMonths: number;
+  payUpToMonth: (month: number) => void;
 };
 
 export const DemoContext = createContext<DemoContextValue | null>(null);
