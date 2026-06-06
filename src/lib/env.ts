@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 const envSchema = z.object({
-  NEXT_PUBLIC_APP_NAME: z.string().min(1).default('boilerHack'),
+  NEXT_PUBLIC_APP_NAME: z.string().min(1).default('Racha'),
   NEXT_PUBLIC_API_URL: z.string().url().default('http://localhost:8000'),
 });
 
