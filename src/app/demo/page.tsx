@@ -13,17 +13,27 @@ export const metadata: Metadata = {
 
 export default function DemoPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="mx-auto flex w-full max-w-6xl items-center px-6 py-4">
-        <Button asChild variant="ghost" size="sm">
-          <Link href="/">
-            <ArrowLeft aria-hidden />
-            Volver a la landing
-          </Link>
-        </Button>
-      </header>
+    // En lg la página se fija a la altura del viewport (sin scroll ni barra);
+    // en mobile el contenido se apila y conserva el scroll natural.
+    <div className="relative flex min-h-dvh flex-col lg:h-dvh lg:overflow-hidden">
+      {/* Superpuesto arriba a la izquierda: fuera del flujo para no empujar
+          el contenido y provocar scroll. left-6 = px-6 del main, para mantener
+          el espaciado lateral uniforme */}
+      <Button
+        asChild
+        variant="ghost"
+        size="sm"
+        className="absolute top-6 left-6 z-10"
+      >
+        <Link href="/">
+          <ArrowLeft aria-hidden />
+          Volver a la landing
+        </Link>
+      </Button>
 
-      <main className="mx-auto grid w-full max-w-6xl flex-1 items-center gap-12 px-6 py-8 lg:grid-cols-2 lg:py-12">
+      {/* pt-16 en mobile deja lugar al botón superpuesto; en lg el centrado
+          vertical ya lo separa */}
+      <main className="mx-auto grid w-full max-w-6xl flex-1 items-center gap-12 px-6 pt-16 pb-8 lg:grid-cols-2 lg:py-0">
         <div className="flex flex-col items-start gap-5">
           <h1 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
             Así se ve Racha dentro de tu app
