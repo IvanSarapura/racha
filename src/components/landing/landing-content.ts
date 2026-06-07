@@ -1,9 +1,10 @@
 import {
   BarChart3,
   Blocks,
-  BookOpen,
   Coins,
+  Database,
   Flame,
+  PiggyBank,
   Plug,
   TrendingUp,
   Users,
@@ -24,25 +25,25 @@ export const FEATURES: Feature[] = [
     icon: Blocks,
     title: 'Capa de behavioral design',
     description:
-      'No reemplazamos tu sistema: nos integramos vía API encima de tu scoring y tu app. Tu usuario no instala nada nuevo.',
+      'No reemplazamos tu scoring: lo potenciamos. Racha se integra vía API y se activa automáticamente con cada microcrédito. Tu usuario no instala nada nuevo.',
   },
   {
     icon: Flame,
     title: 'Sistema de 12 meses',
     description:
-      'Cada mes, un hito con propósito conductual: del vencimiento flexible del mes 2 a la tasa -3% del mes 12.',
+      'Cada mes tiene un propósito conductual: del vencimiento flexible del mes 2 a la cobertura por atraso del mes 10 y la tasa -3% del mes 12.',
   },
   {
     icon: Coins,
     title: 'Costo mínimo, valor máximo',
     description:
-      'La mayoría de los hitos le cuestan $0 a la fintech. El valor percibido por el usuario es máximo.',
+      'La mayoría de los hitos le cuestan $0 a la fintech: progreso visual, niveles y notificaciones. Los beneficios con costo tienen topes configurables desde la API.',
   },
   {
     icon: BarChart3,
-    title: 'Datos que mejoran tu scoring',
+    title: 'Reporte conductual del usuario',
     description:
-      'La constancia de pago genera señales de comportamiento que enriquecen tu modelo de riesgo.',
+      'Al mes 12 sabés cómo paga tu usuario, no solo si pagó: qué lo frena, qué lo motiva y qué probabilidad tiene de pagar un crédito mayor.',
   },
 ];
 
@@ -57,19 +58,19 @@ export const STEPS: Step[] = [
     number: '01',
     title: 'Integrás',
     description:
-      'Conectás la API de Racha en días, no en meses. El widget aparece dentro de tu app, con tu marca.',
+      'Conectás la API de Racha en días, no en meses. El widget aparece dentro de tu app, con tu marca, y se activa solo cuando el usuario toma un microcrédito.',
   },
   {
     number: '02',
     title: 'Tus usuarios construyen su racha',
     description:
-      'Cada cuota pagada a término avanza una racha de 12 meses que desbloquea beneficios concretos.',
+      'Cada cuota pagada a término suma un mes y desbloquea beneficios concretos: cashback, reintegros por pago anticipado y una tasa menor al completar el año.',
   },
   {
     number: '03',
     title: 'Tu cartera mejora',
     description:
-      'Menos mora, más retención y mejores datos de comportamiento para tu scoring.',
+      'Menos mora, usuarios que se quedan y un reporte conductual por cada graduado. Cada punto de mora recuperado vale órdenes de magnitud más que el fee.',
   },
 ];
 
@@ -122,11 +123,33 @@ export const VALIDATION_STATS: Metric[] = [
     badge: 'EY · Pomelo',
   },
   {
-    icon: BookOpen,
-    value: 'Validado',
+    icon: Users,
+    value: '12M+',
     label:
-      'la gamificación fintech mejora adopción, transacciones y retención de largo plazo',
-    badge: 'Wiley 2025',
+      'usuarios acumula Tala acompañando crédito sin historial en mercados como el argentino',
+    badge: 'Tala · 2025',
+  },
+];
+
+// Los tres argumentos de venta a la fintech (documento de pitch).
+export const GAINS: Feature[] = [
+  {
+    icon: PiggyBank,
+    title: 'Recuperás cartera',
+    description:
+      'Cada punto de mora recuperado en una cartera grande son miles de millones. A Racha le pagás una fracción de eso.',
+  },
+  {
+    icon: Users,
+    title: 'Retenés al usuario más caro de adquirir',
+    description:
+      'El joven sin historial es el más costoso de captar. Racha lo engancha 12 meses — y su historial, su nivel y su score lo anclan a tu app para el próximo crédito.',
+  },
+  {
+    icon: Database,
+    title: 'Datos que tus competidores no tienen',
+    description:
+      'Al mes 12 accedés primero al reporte conductual de tus usuarios: podés ofrecerles el crédito grande antes que cualquier otro.',
   },
 ];
 

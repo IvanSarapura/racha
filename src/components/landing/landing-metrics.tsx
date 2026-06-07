@@ -11,8 +11,8 @@ export function LandingMetrics() {
           Por qué funciona
         </h2>
         <p className="text-muted-foreground text-pretty">
-          El behavioral design aplicado a finanzas tiene evidencia de industria
-          y validación académica.
+          No inventamos nada nuevo: tomamos mecanismos probados a escala global
+          — rachas, progreso visible, recompensas — y los aplicamos al crédito.
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-3">

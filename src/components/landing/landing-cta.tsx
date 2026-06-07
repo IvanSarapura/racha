@@ -11,8 +11,9 @@ export function LandingCta() {
           Sumá Racha a tu app
         </h2>
         <p className="text-primary-foreground/80 max-w-prose text-pretty">
-          Mirá la demo interactiva: así se ve el sistema de 12 meses dentro de
-          una billetera real.
+          No te vendemos tecnología: te vendemos cartera más sana, usuarios que
+          se quedan y datos que tus competidores no tienen — por una fracción de
+          lo que te ahorramos. Miralo funcionando en la demo.
         </p>
         <Button asChild size="lg" variant="secondary">
           <Link href="/demo">

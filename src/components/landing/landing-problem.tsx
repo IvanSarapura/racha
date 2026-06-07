@@ -15,8 +15,9 @@ export function LandingProblem() {
         </h2>
         <p className="text-muted-foreground text-pretty">
           El crédito fintech resolvió el acceso. Lo que falta es acompañar el
-          comportamiento: nadie le enseña al usuario qué pasa después de tomar
-          el crédito.
+          comportamiento: nadie le explica al usuario que borrar la app no borra
+          la deuda — entra en mora, se reporta al Veraz y queda fuera del
+          sistema durante años.
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-3">

@@ -7,6 +7,7 @@ import { LandingMetrics } from '@/components/landing/landing-metrics';
 import { LandingNavbar } from '@/components/landing/landing-navbar';
 import { LandingProblem } from '@/components/landing/landing-problem';
 import { LandingSocialProof } from '@/components/landing/landing-social-proof';
+import { LandingValue } from '@/components/landing/landing-value';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <LandingProblem />
         <LandingFeatures />
         <LandingHowItWorks />
+        <LandingValue />
         <LandingMetrics />
         <LandingCta />
       </main>

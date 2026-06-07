@@ -24,9 +24,10 @@ export function LandingHero() {
           Convertí datos de riesgo en hábitos de pago
         </h1>
         <p className="text-muted-foreground max-w-prose text-lg text-pretty">
-          Racha es la capa de incentivos que integrás vía API en tu app. Un
-          sistema de 12 meses que acompaña a tus usuarios de microcréditos a
-          pagar a término — vos ganás cartera más sana, retención y datos.
+          Racha es la capa de incentivos que integrás vía API en tu app.
+          Mientras el sistema castiga al deudor que falla, Racha recompensa al
+          que paga a término durante 12 meses — vos ganás cartera más sana,
+          retención y datos que nadie más tiene.
         </p>
         <blockquote className="text-muted-foreground border-primary max-w-prose border-l-2 pl-4 text-sm italic">
           «Somos el Duolingo del pago de créditos. El streak no es una feature —
