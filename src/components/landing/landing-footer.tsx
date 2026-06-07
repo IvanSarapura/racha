@@ -11,7 +11,8 @@ export function LandingFooter() {
       <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-muted-foreground flex items-center gap-2 text-sm">
           <Flame className="text-primary size-4" aria-hidden />
-          {env.NEXT_PUBLIC_APP_NAME} — incentivos por constancia para fintechs.
+          {env.NEXT_PUBLIC_APP_NAME} — behavioral design para el pago
+          responsable de microcréditos.
         </p>
         <div className="text-muted-foreground flex items-center gap-4 text-sm">
           <Link

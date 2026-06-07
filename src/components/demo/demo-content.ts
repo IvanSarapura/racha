@@ -1,10 +1,12 @@
 import {
   CalendarClock,
   Coins,
+  CreditCard,
   Flame,
   Medal,
   PiggyBank,
   Shield,
+  Ticket,
   TrendingUp,
   Trophy,
   type LucideIcon,
@@ -20,22 +22,25 @@ export type Incentive = {
   title: string;
 };
 
-// Un incentivo por mes de racha, en el orden del documento
-// backend/app/data/incentivos_racha.csv. El estado (desbloqueado /
-// en progreso / bloqueado) se deriva de PAID_MONTHS en render.
+// Un incentivo por mes de racha. Curado a partir de
+// backend/app/data/incentivos_racha.csv: los hitos de "barra al X%" se
+// reemplazaron por recompensas chicas pero tangibles (bajo costo para la
+// fintech, suficiente incentivo para no caer en mora) y los niveles
+// escalan Bronce → Plata → Oro. El estado (desbloqueado / en progreso /
+// bloqueado) se deriva de paidMonths en render.
 export const INCENTIVES: Incentive[] = [
   { month: 1, icon: Flame, title: 'Racha activada' },
   { month: 2, icon: CalendarClock, title: 'Mover vencimiento 72hs' },
-  { month: 3, icon: TrendingUp, title: 'Barra de progreso' },
-  { month: 4, icon: TrendingUp, title: 'Barra al 33%' },
+  { month: 3, icon: Medal, title: 'Nivel Bronce' },
+  { month: 4, icon: CreditCard, title: '3 cuotas sin interés en una compra' },
   { month: 5, icon: Coins, title: 'Cashback 10%' },
   { month: 6, icon: PiggyBank, title: 'Reintegro por pago anticipado' },
-  { month: 7, icon: TrendingUp, title: 'Barra al 58%' },
+  { month: 7, icon: Ticket, title: 'Cupones de descuento' },
   { month: 8, icon: Medal, title: 'Nivel Plata' },
-  { month: 9, icon: TrendingUp, title: 'Barra al 75%' },
-  { month: 10, icon: Shield, title: 'Escudo de racha' },
-  { month: 11, icon: TrendingUp, title: 'Barra al 91%' },
-  { month: 12, icon: Trophy, title: 'Tasa -3% + score exportable' },
+  { month: 9, icon: TrendingUp, title: 'Aumento de límite' },
+  { month: 10, icon: Shield, title: 'Cobertura por atraso' },
+  { month: 11, icon: Medal, title: 'Nivel Oro' },
+  { month: 12, icon: Trophy, title: 'Tasa -3%' },
 ];
 
 // La racha es mensual sobre una ventana anual: una cuota pagada por mes,

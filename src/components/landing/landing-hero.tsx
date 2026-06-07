@@ -18,16 +18,20 @@ export function LandingHero() {
       <div className="flex flex-col items-start gap-6">
         <Badge variant="outline">
           <Flame aria-hidden />
-          Incentivos por constancia para fintechs
+          Behavioral design para fintechs
         </Badge>
         <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
-          Convertí la constancia de tus usuarios en crecimiento
+          Convertí datos de riesgo en hábitos de pago
         </h1>
         <p className="text-muted-foreground max-w-prose text-lg text-pretty">
-          Racha es el widget de incentivos que integrás en tu app fintech. Tus
-          usuarios mantienen rachas de pago y desbloquean beneficios — vos
-          mejorás retención y perfil de riesgo.
+          Racha es la capa de incentivos que integrás vía API en tu app. Un
+          sistema de 12 meses que acompaña a tus usuarios de microcréditos a
+          pagar a término — vos ganás cartera más sana, retención y datos.
         </p>
+        <blockquote className="text-muted-foreground border-primary max-w-prose border-l-2 pl-4 text-sm italic">
+          «Somos el Duolingo del pago de créditos. El streak no es una feature —
+          es el producto.»
+        </blockquote>
         <div className="flex flex-wrap gap-3">
           <Button asChild size="lg">
             <Link href="/demo">
@@ -56,15 +60,18 @@ export function LandingHero() {
                 <Flame className="text-primary size-4" aria-hidden />
                 Tu racha
               </CardTitle>
-              <CardDescription>4 semanas seguidas · seguí así</CardDescription>
+              <CardDescription>5 meses seguidos · seguí así</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-2 px-4">
-              <Progress value={71} aria-label="Progreso semanal: 5 de 7 días" />
+              <Progress
+                value={(5 / 12) * 100}
+                aria-label="Progreso mensual: 5 de 12 cuotas"
+              />
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground text-xs">
-                  5 de 7 días esta semana
+                  5 de 12 cuotas pagadas
                 </span>
-                <Badge variant="secondary">Cashback 2%</Badge>
+                <Badge variant="secondary">Cashback 10%</Badge>
               </div>
             </CardContent>
           </Card>

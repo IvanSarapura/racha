@@ -5,6 +5,7 @@ import { LandingHero } from '@/components/landing/landing-hero';
 import { LandingHowItWorks } from '@/components/landing/landing-how-it-works';
 import { LandingMetrics } from '@/components/landing/landing-metrics';
 import { LandingNavbar } from '@/components/landing/landing-navbar';
+import { LandingProblem } from '@/components/landing/landing-problem';
 import { LandingSocialProof } from '@/components/landing/landing-social-proof';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <LandingHero />
         <LandingSocialProof />
+        <LandingProblem />
         <LandingFeatures />
         <LandingHowItWorks />
         <LandingMetrics />

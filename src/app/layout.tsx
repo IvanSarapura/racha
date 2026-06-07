@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 const APP_DESCRIPTION =
-  'Racha es el widget de incentivos por constancia que las fintechs integran en su app: rachas de pago que desbloquean beneficios, más retención y mejor lectura de riesgo.';
+  'Racha transforma datos de riesgo en incentivos que generan hábitos de pago. La capa de behavioral design que las fintechs integran vía API: 12 meses de hitos, menos mora, más retención.';
 
 export const metadata: Metadata = {
   title: {

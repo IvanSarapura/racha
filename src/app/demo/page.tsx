@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = {
   title: 'Demo',
   description:
-    'Simulación interactiva: así se ve el widget de incentivos de Racha dentro de una billetera como Mercado Pago.',
+    'Simulación interactiva: así se ve el sistema de incentivos de 12 meses de Racha dentro de una billetera como Mercado Pago.',
 };
 
 export default function DemoPage() {

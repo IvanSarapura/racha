@@ -1,8 +1,9 @@
 import {
   BarChart3,
   Blocks,
+  BookOpen,
+  Coins,
   Flame,
-  Palette,
   Plug,
   TrendingUp,
   Users,
@@ -21,27 +22,27 @@ export type Feature = {
 export const FEATURES: Feature[] = [
   {
     icon: Blocks,
-    title: 'Integración embebida',
+    title: 'Capa de behavioral design',
     description:
-      'Una tarjeta debajo del balance. SDK liviano, sin rehacer tu UI ni tu flujo de onboarding.',
+      'No reemplazamos tu sistema: nos integramos vía API encima de tu scoring y tu app. Tu usuario no instala nada nuevo.',
   },
   {
     icon: Flame,
-    title: 'Incentivos por racha',
+    title: 'Sistema de 12 meses',
     description:
-      'Rachas de pago que desbloquean beneficios, recompensas y mejoras de crédito para tus usuarios.',
+      'Cada mes, un hito con propósito conductual: del vencimiento flexible del mes 2 a la tasa -3% del mes 12.',
+  },
+  {
+    icon: Coins,
+    title: 'Costo mínimo, valor máximo',
+    description:
+      'La mayoría de los hitos le cuestan $0 a la fintech. El valor percibido por el usuario es máximo.',
   },
   {
     icon: BarChart3,
-    title: 'Señal de riesgo',
+    title: 'Datos que mejoran tu scoring',
     description:
-      'La constancia de pago es una señal de comportamiento que enriquece tu scoring crediticio.',
-  },
-  {
-    icon: Palette,
-    title: 'Listo para marca blanca',
-    description:
-      'Se adapta a tu identidad visual con tokens de tema. Tu app, tu marca, nuestros incentivos.',
+      'La constancia de pago genera señales de comportamiento que enriquecen tu modelo de riesgo.',
   },
 ];
 
@@ -56,19 +57,19 @@ export const STEPS: Step[] = [
     number: '01',
     title: 'Integrás',
     description:
-      'Sumás el widget de Racha debajo del balance con unas líneas de código.',
+      'Conectás la API de Racha en días, no en meses. El widget aparece dentro de tu app, con tu marca.',
   },
   {
     number: '02',
-    title: 'Tus usuarios participan',
+    title: 'Tus usuarios construyen su racha',
     description:
-      'Mantienen su racha de pagos y ven su progreso semanal dentro de tu app.',
+      'Cada cuota pagada a término avanza una racha de 12 meses que desbloquea beneficios concretos.',
   },
   {
     number: '03',
-    title: 'Crecés',
+    title: 'Tu cartera mejora',
     description:
-      'Más retención, más engagement y mejor lectura de riesgo en tu cartera.',
+      'Menos mora, más retención y mejores datos de comportamiento para tu scoring.',
   },
 ];
 
@@ -79,24 +80,53 @@ export type Metric = {
   badge: string;
 };
 
-export const METRICS: Metric[] = [
+// Datos del problema con fuente pública verificable (documento de pitch).
+// El campo badge indica la fuente.
+export const PROBLEM_STATS: Metric[] = [
   {
     icon: TrendingUp,
-    value: '+38%',
-    label: 'retención semanal',
-    badge: 'engagement',
+    value: '~30%',
+    label:
+      'de mora en billeteras virtuales de jóvenes — el triple que hace un año y medio',
+    badge: 'BCRA',
   },
   {
-    icon: Flame,
-    value: '+25%',
-    label: 'pagos a término',
-    badge: 'constancia',
+    icon: BarChart3,
+    value: '5,5% → 14,7%',
+    label: 'saltó el ratio de irregularidad de Mercado Pago en el último año',
+    badge: 'BCRA · 1816',
   },
   {
     icon: Users,
-    value: '5.000',
-    label: 'usuarios analizados',
-    badge: '18–35 años',
+    value: '40%',
+    label:
+      'de los jóvenes menores de 25 con crédito ya tiene problemas para pagarlo',
+    badge: 'INDEC',
+  },
+];
+
+// Evidencia de que el behavioral design aplicado a finanzas funciona.
+export const VALIDATION_STATS: Metric[] = [
+  {
+    icon: Flame,
+    value: '82%',
+    label:
+      'de los consumidores afirma que los programas de fidelidad influyen en su gasto',
+    badge: 'EY LATAM',
+  },
+  {
+    icon: TrendingUp,
+    value: '+15–25%',
+    label:
+      'de ingresos recurrentes con una estrategia de lealtad bien implementada',
+    badge: 'EY · Pomelo',
+  },
+  {
+    icon: BookOpen,
+    value: 'Validado',
+    label:
+      'la gamificación fintech mejora adopción, transacciones y retención de largo plazo',
+    badge: 'Wiley 2025',
   },
 ];
 
