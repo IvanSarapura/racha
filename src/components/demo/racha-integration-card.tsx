@@ -25,8 +25,8 @@ export function RachaIntegrationCard() {
       className="focus-visible:ring-ring/50 w-full rounded-xl text-left transition-transform outline-none focus-visible:ring-[3px] active:scale-[0.98]"
       aria-label="Abrir Racha: tu racha de pagos"
     >
-      {/* Sin borde, como las cards nativas de MP; la marca Racha la pone el ícono */}
-      <Card className="gap-3 border-0 py-4 shadow-sm">
+      {/* Borde amarillo MP que gira sobre el border radius (utility en globals.css) */}
+      <Card className="racha-border-spin gap-3 border-0 py-4 shadow-sm">
         <CardHeader className="px-4">
           <CardTitle className="flex items-center justify-between text-sm">
             <span className="flex items-center gap-2">
@@ -46,6 +46,7 @@ export function RachaIntegrationCard() {
           <Progress
             value={(paidMonths / MONTH_LABELS.length) * 100}
             aria-label={`Progreso de tu racha: ${paidMonths} de ${MONTH_LABELS.length} meses`}
+            className="bg-mp-celeste/20 [&_[data-slot=progress-indicator]]:bg-mp-celeste"
           />
         </CardContent>
       </Card>
