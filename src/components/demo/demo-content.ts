@@ -37,7 +37,7 @@ export const INCENTIVES: Incentive[] = [
   { month: 6, icon: PiggyBank, title: 'Reintegro por pago anticipado' },
   { month: 7, icon: Ticket, title: 'Cupones de descuento' },
   { month: 8, icon: Medal, title: 'Nivel Plata' },
-  { month: 9, icon: TrendingUp, title: 'Aumento de límite' },
+  { month: 9, icon: TrendingUp, title: 'Suscripción bonificada' },
   { month: 10, icon: Shield, title: 'Cobertura por atraso' },
   { month: 11, icon: Medal, title: 'Nivel Oro' },
   { month: 12, icon: Trophy, title: 'Tasa -3%' },

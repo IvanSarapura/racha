@@ -30,8 +30,8 @@ export function RachaIntegrationCard() {
         <CardHeader className="px-4">
           <CardTitle className="flex items-center justify-between text-sm">
             <span className="flex items-center gap-2">
-              <Flame className="text-primary size-4" aria-hidden />
-              Tu racha
+              <Flame className="size-4 text-orange-500" aria-hidden />
+              Racha
             </span>
             <ChevronRight
               className="text-muted-foreground size-4"

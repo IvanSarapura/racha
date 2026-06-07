@@ -49,7 +49,7 @@ export default function DemoPage() {
               Interactuá con la pantalla como si fuera tu app
             </li>
             <li className="flex items-center gap-2">
-              <Flame className="text-primary size-4" aria-hidden />
+              <Flame className="size-4 text-orange-500" aria-hidden />
               La tarjeta de racha es el widget que integrás
             </li>
             <li className="flex items-center gap-2">

@@ -91,8 +91,8 @@ export function RachaScreen() {
       <div className="scrollbar-none flex flex-1 flex-col gap-5 overflow-y-auto">
         {/* Contador de racha */}
         <div className="flex flex-col items-center gap-2 py-2">
-          <div className="bg-accent flex size-16 items-center justify-center rounded-full">
-            <Flame className="text-primary size-8" aria-hidden />
+          <div className="flex size-16 items-center justify-center rounded-full bg-orange-500/10">
+            <Flame className="size-8 text-orange-500" aria-hidden />
           </div>
           <p className="text-3xl font-semibold tracking-tight">
             {paidMonths} meses
